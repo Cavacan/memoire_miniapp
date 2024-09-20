@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bubble Animation</title>
+  <link rel="stylesheet" href="bubble_style.css">
+</head>
+<body>
+  <div id="bubble-container"></div>
+  <script type="module">
+    import { createBubble } from './bubble_script.js';
+
+    // Bubble creation interval
+    setInterval(() => {
+      console.log('Creating bubble...');
+      createBubble();
+    }, 500);
+  </script>
+</body>
+</html>
